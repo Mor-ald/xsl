@@ -37,3 +37,16 @@ function task(x) {
     })
 }
 ```
+
+Чекинатор «Деструктуризация» - 1:
+```
+let a; ({ a } = { a: 5 }); console.log(a);
+```
+
+Чекинатор «Промис»:
+```
+async function task (x) {
+    const name = await x.name
+        return Promise.resolve(name  + 'morald')
+}
+```
