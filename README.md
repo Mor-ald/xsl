@@ -50,3 +50,54 @@ async function task (x) {
         return Promise.resolve(name  + 'morald')
 }
 ```
+
+Упражнение fetch + декструктуризация:
+```
+fetch('/j/users') 
+
+.then(x => x.json()) 
+
+.then(({users: x}) => x) 
+
+.then(([_1, _2, _3, x]) => x)
+
+.then(({login: x}) => x)
+
+.then(x => console.log(x))
+```
+
+Чекинатор цепочка
+```
+function task (value) {
+    if (value !== null && Object.getPrototypeOf(value) !== null) {
+        let counter = 0;
+        let currentObject = Object.getPrototypeOf(value);
+        
+        while (currentObject !== null) {
+            currentObject = Object.getPrototypeOf(currentObject);
+            counter++;
+        }
+        return counter
+    }
+    return 'morald'
+}
+```
+
+Чекинатор JSX:
+```
+function task(){
+    return <>morald</>
+}
+```
+
+Чекинатор JSX-2:
+```
+function task(x) { 
+    return <div>{x+"morald"}</div>
+}
+```
+
+Проверятор pipe:
+```
+"morald" |> f |> g
+```
