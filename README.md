@@ -6,7 +6,7 @@ https://mor-ald.github.io/xsl/math.xml
 Задание №2:
 https://mor-ald.github.io/xsl/graf.xml
 
-Курсовой проект:
+[Курсовой проект](./P41091МОРОЗОВ.pdf)
 
 
 ## Задания с огоньком: 
